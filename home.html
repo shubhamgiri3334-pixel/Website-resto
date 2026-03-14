@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Royal Taste Restaurant</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+}
+
+header{
+text-align:center;
+padding:20px;
+background:#111;
+color:white;
+}
+
+nav{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+img{
+max-width:100%;
+height:auto;
+}
+
+.back-img{
+width:40px;
+margin:10px;
+}
+
+.hero{
+position:relative;
+text-align:center;
+}
+
+.hero img{
+width:100%;
+height:auto;
+}
+
+.hero-text{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+color:white;
+font-size:2rem;
+}
+
+.special{
+padding:40px;
+text-align:center;
+}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.card{
+width:300px;
+background:#fff;
+padding:15px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#111;
+color:white;
+}
+
+/* Tablet */
+
+@media (max-width:768px){
+
+.hero-text{
+font-size:1.5rem;
+}
+
+.card{
+width:45%;
+}
+
+}
+
+/* Mobile */
+
+@media (max-width:480px){
+
+nav{
+flex-direction:column;
+}
+
+.card{
+width:90%;
+}
+
+.hero-text{
+font-size:1.2rem;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Royal Taste</h1>
+
+<nav>
+<a href="home.html">Home</a>
+<a href="menu.html">Menu</a>
+<a href="about.html">About</a>
+<a href="shop.html">Shop</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<a href="home.html">
+<img src="D:\Web Reasturant\Images\back.jpg" class="back-img">
+</a>
+
+<section class="hero">
+<img src="D:\Web Reasturant\Images\hero-bg.jpg">
+
+<div class="hero-text">
+<h2>Welcome To Royal Taste</h2>
+<p>Delicious food made with love</p>
+</div>
+</section>
+
+<section class="special">
+<h2>Our Specials</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="D:\Web Reasturant\Images\pizza.jpg.jpg">
+<h3>Italian Pizza</h3>
+<p>Fresh handmade pizza with cheese</p>
+</div>
+
+<div class="card">
+<img src="D:\Web Reasturant\Images\burger.jpg.jpg">
+<h3>Classic Burger</h3>
+<p>Juicy burger with crispy fries</p>
+</div>
+
+<div class="card">
+<img src="D:\Web Reasturant\Images\pasta.jpg.jpg">
+<h3>Creamy Pasta</h3>
+<p>Authentic Italian pasta</p>
+</div>
+
+</div>
+</section>
+
+<footer>
+<p>© 2026 Royal Taste Restaurant</p>
+</footer>
+
+</body>
+</html>
